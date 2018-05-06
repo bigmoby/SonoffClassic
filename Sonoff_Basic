@@ -126,8 +126,8 @@ enum CMD {
 };
 volatile uint8_t cmd = CMD_NOT_DEFINED;
 
-uint8_t           relayState                                        = HIGH;  // HIGH: closed switch
-uint8_t           buttonState                                       = HIGH; // HIGH: opened switch
+uint8_t           relayState                                        = LOW;  // Inizializzo il relè ad "aperto" in modo che se perde la connessione non alimenta nulla.
+uint8_t           buttonState                                       = HIGH; // HIGH: close switch
 uint8_t           currentButtonState                                = buttonState;
 long              buttonStartPressed                                = 0;
 long              buttonDurationPressed                             = 0;
@@ -520,4 +520,3 @@ void loop() {
 
   yield();
 }
-
