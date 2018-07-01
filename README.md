@@ -9,3 +9,6 @@
     optimistic: false
     retain: true
 ``` 
+
+Sonoff schematics pinout:
+![Sonoff pinout](sonoff_gpio-r.jpg)
