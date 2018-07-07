@@ -496,7 +496,7 @@ void loop() {
           if (buttonDurationPressed < 500) {
             relayState = relayState == HIGH ? LOW : HIGH;
             setRelayState();
-          } else if (buttonDurationPressed < 3000) {
+          } else if (buttonDurationPressed < 5000) {
             restart();
           } else {
             reset();
